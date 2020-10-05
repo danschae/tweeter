@@ -27,7 +27,7 @@ body {
 
  .container {
   background-color: #f4f1ec;
-  margin: 90px;
+  margin: 0 90px;
   display: flex; 
   flex-direction: column;
   align-items: center;
