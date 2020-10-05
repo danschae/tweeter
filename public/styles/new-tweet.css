@@ -4,10 +4,10 @@
   align-items: flex-start;
 }
 
-textarea {
+#tweet-text {
   display: flex;
   align-items: center;
-  width: 1000px;
+  width: 90vw;
   border-style: solid;
   margin: 10px;
   background-color: #f4f1ec;
@@ -16,19 +16,18 @@ textarea {
   border-color: black;
 }
 
-button {
+.submit-tweet{
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
   color: rgb(255, 255, 255);
   margin: 0 10px;
 }
 
-output {
-  text-align: right;
+.counter {
   font-family: 'Bungee', cursive; 
 }
 
-div {
+.submission-container {
   display: flex;
   justify-content: space-between;
 }
