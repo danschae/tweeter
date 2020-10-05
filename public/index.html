@@ -41,8 +41,17 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius soluta, quam adipisci, est, pariatur quae doloremque minima maiores temporibus impedit itaque commodi quaerat. Quis consequatur nostrum dolorum quam temporibus alias!</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet debitis eos officiis. Nulla, necessitatibus eligendi. Voluptatem delectus rem mollitia obcaecati autem ipsum assumenda omnis consequatur, sapiente quia neque quis.</p>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets/">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
