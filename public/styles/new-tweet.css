@@ -25,6 +25,12 @@
 
 .counter {
   font-family: 'Bungee', cursive; 
+  
+}
+
+.counterRed {
+  font-family: 'Bungee', cursive; 
+  color: red;
 }
 
 .submission-container {
