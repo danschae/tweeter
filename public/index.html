@@ -24,6 +24,9 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -48,12 +51,24 @@
         <form method="POST" action="/tweets/">
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you complaining about?"></textarea>
-          <div>
-            <button type="submit">Tweet</button>
+          <div class="submission-container">
+            <button type="submit" class="submit-tweet">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
+      <article class="tweet">
+        <header class="tweet-header">
+          <p>img</p><br>
+          <p>Name</p><br>
+          <p>Handle</p><br>
+        </header>
+        <p class="tweeted-content">tweeted tex!</p><br>
+        <footer class="tweet-footer">
+          <p>time</p><br>
+          <p>randon pics</p><br>
+        </footer>
+      </article>
     </main>
   </body>
 </html>
