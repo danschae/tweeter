@@ -38,3 +38,11 @@
   justify-content: space-between;
 }
 
+.error {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  display:flex;
+  justify-content: center;
+
+}
