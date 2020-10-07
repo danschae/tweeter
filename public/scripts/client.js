@@ -12,12 +12,12 @@ $(document).ready(function() {
     let inputtedTweet = $("#tweet-text").val();
     if (inputtedTweet === "") {
       $(".error").empty();
-      $(".error").append(`<i class="fas fa-exclamation-triangle"></i>Error!!: Please make sure to not send empty tweets!<br> <i class="fas fa-exclamation-triangle"></i>`).hide().slideDown(1000)
+      $(".error").append(`<i class="fas fa-exclamation-triangle"></i>Error: Please make sure to not send empty tweets!!<br> <i class="fas fa-exclamation-triangle"></i>`).hide().slideDown(1000)
       $("form")[0].reset();
     }
     if (inputtedTweet.length > 140) {
       $(".error").empty();
-      $(".error").append(`<i class="fas fa-exclamation-triangle"></i>Error!!: Please make sure to not exceed character limit!<br> <i class="fas fa-exclamation-triangle"></i>`).hide().slideDown(1000);
+      $(".error").append(`<i class="fas fa-exclamation-triangle"></i>Error: Please make sure not to exceed the character limit!<br> <i class="fas fa-exclamation-triangle"></i>`).hide().slideDown(1000);
       $("form")[0].reset();
     }
 
