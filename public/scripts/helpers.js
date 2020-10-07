@@ -26,17 +26,9 @@ const createTweetElement = (tweet) => {
  const renderTweets = (tweets) => {
    for (const tweet of tweets) {
     let appendedTweet = createTweetElement(tweet);
-     $('#tweet-container').append(appendedTweet);
+     $('#tweet-container').prepend(appendedTweet);
    }
  }
-
- const addTweets = (tweets) => {
-  for (const tweet of tweets) {
-   let appendedTweet = createTweetElement(tweet);
-    $('#tweet-container').prepend(appendedTweet);
-  }
-}
-
 
  const loadTweets = () => {
   $.ajax({
@@ -49,13 +41,3 @@ const createTweetElement = (tweet) => {
   .catch(err => console.log(err))
  }
 
- const loadLastTweet = () => {
-  $.ajax({
-    url: "/tweets/",
-    method: "GET"
-  })
-  .then(tweets => {
-    addTweets(tweets)
-  })
-  .catch(err => console.log(err))
- }
