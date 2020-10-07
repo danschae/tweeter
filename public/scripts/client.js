@@ -5,22 +5,32 @@
  */
 
 $(document).ready(function() {
-  $( "form" ).submit(event, function() {
+  $( "form" ).submit(function(event) {
+
     event.preventDefault();
-    window.location.reload();
+
     let inputtedTweet = $("#tweet-text").val();
-    console.log(inputtedTweet)
     if (inputtedTweet === "" || inputtedTweet.length > 140) {
-      alert("errorrr!")
+      alert("errorrr!");
+      $("form")[0].reset();
     } else {
     $.ajax({
       url: "/tweets/",
-      type: "POST",
+      method: "POST",
       data: $(this).serialize()
     })
+    .then( function(tweet) {
+      renderTweets([tweet])
+      $("form").trigger("reset")
+      $("#tweet-text").keyup();
+    })
+    .catch(error => console.log(error))
   }
   })
+
   loadTweets();
+
 })
+
 
 
