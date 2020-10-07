@@ -7,11 +7,18 @@
 $(document).ready(function() {
   $( "form" ).submit(event, function() {
     event.preventDefault();
+    window.location.reload();
+    let inputtedTweet = $("#tweet-text").val();
+    console.log(inputtedTweet)
+    if (inputtedTweet === "" || inputtedTweet.length > 140) {
+      alert("errorrr!")
+    } else {
     $.ajax({
       url: "/tweets/",
       type: "POST",
       data: $(this).serialize()
     })
+  }
   })
   loadTweets();
 })
