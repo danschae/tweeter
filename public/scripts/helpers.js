@@ -1,4 +1,10 @@
 
+const escape = (str) => {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML
+ }
+
 const createTweetElement = (tweet) => {
   let returnedTweet =  `<article class="tweet">
   <header class="tweet-header">
@@ -10,7 +16,7 @@ const createTweetElement = (tweet) => {
   <p>${tweet.user.handle}</p><br>
 </div>
 </header>
-<p class="tweeted-content">${tweet.content.text}</p><br>
+<p class="tweeted-content">${escape(tweet.content.text)}</p><br>
 <footer class="tweet-footer">
   <p>${new Date(tweet.created_at)}</p><br>
   <div class="icons">
