@@ -27,6 +27,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
+    <script type="text/javascript" src="/scripts/helpers.js"></script>
+
     <script type="text/javascript" src="/scripts/client.js"></script>
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -53,6 +55,7 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
+          <h2 class="error"></h2>
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you complaining about?"></textarea>
           <div class="submission-container">
