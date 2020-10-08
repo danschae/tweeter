@@ -1,12 +1,13 @@
-
+//this function is used to prevent hackers from inputting html in the text area
 const escape = (str) => {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML
- }
+}
+
 
 const createTweetElement = (tweet) => {
-  let returnedTweet =  `<article class="tweet">
+  let returnedTweet = $(`<article class="tweet">
   <header class="tweet-header">
     <div class="user-info">
   <img src=${tweet.user.avatars}><br>
@@ -18,32 +19,34 @@ const createTweetElement = (tweet) => {
 </header>
 <p class="tweeted-content">${escape(tweet.content.text)}</p><br>
 <footer class="tweet-footer">
-  <p>${new Date(tweet.created_at)}</p><br>
+  <p>${moment(tweet.created_at).fromNow()}</p><br>
   <div class="icons">
     <i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i>
     <i class="fas fa-heart"></i>
     </div>
     </footer>
-  </article>`;
+  </article>`);
   return returnedTweet;
- }
+}
 
- const renderTweets = (tweets) => {
-   for (const tweet of tweets) {
+// the important thing to note with this function is that tweets are prepended, not appended, this is important
+// as otherwise old tweets will show up on the page first
+const renderTweets = (tweets) => {
+  for (const tweet of tweets) {
     let appendedTweet = createTweetElement(tweet);
-     $('#tweet-container').prepend(appendedTweet);
-   }
- }
+    $('#tweet-container').prepend(appendedTweet);
+  }
+}
 
- const loadTweets = () => {
+
+const loadTweets = () => {
   $.ajax({
-    url: "/tweets/",
-    method: "GET"
-  })
-  .then(tweets => {
-    renderTweets(tweets)
-  })
-  .catch(err => console.log(err))
- }
-
+      url: "/tweets/",
+      method: "GET"
+    })
+    .then(tweets => {
+      renderTweets(tweets)
+    })
+    .catch(err => console.log(err))
+}
