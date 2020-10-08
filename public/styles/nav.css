@@ -9,3 +9,24 @@ nav {
   top: 0;
   width: 100%;
 }
+
+#writeTweet {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  margin: -30px;
+  margin-right: 10px;
+}
+
+#arrowDown {
+  color: white;
+  display: flex;
+  margin: 10px;
+  margin-right: 50px;
+  justify-content: flex-end;
+}
+
+a {
+  color: red;
+}

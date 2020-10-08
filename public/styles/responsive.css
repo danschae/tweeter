@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+  nav {
+  background-color: #00e3e3;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  }
+
+  .handle {
+    color: gray;
+  }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .full-container {
+    display: flex;
+  }
+  
+  .main-header {
+    margin: 40px;
+    width: 30%;
+  } 
+
+  #writeTweet {
+    display: none;
+  }
+
+  #arrowDown {
+    display: none;
+  }
+ 
+  .container {
+   margin: 40px;
+   width: 66.6%
+  }
+ 
+ }

@@ -1,19 +1,29 @@
-.new-tweet{
+#new-tweet{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 20px;
+}
+
+form {
+  width: 100%;
+  padding: 0 40px;
+  padding-left: 11px;
 }
 
 #tweet-text {
-  display: flex;
-  align-items: center;
-  width: 90vw;
-  border-style: solid;
+  width: 100%;
+  border-style: solid; 
   margin: 10px;
   background-color: #f4f1ec;
   border:none;
   border-bottom: solid;
   border-color: black;
+}
+
+.submission-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .submit-tweet{
@@ -33,17 +43,12 @@
   color: red;
 }
 
-.submission-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .error {
+  width: 70%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   color: red;
-  display:flex;
-  justify-content: center;
+  text-align:left;
 }
 
 
