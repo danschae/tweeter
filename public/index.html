@@ -38,7 +38,14 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span>TWEETER</span>
+      <p id="writeTweet">Write a new tweet</p><br>
+      <div id="arrowDown">
+        <a href="#new-tweet">
+      <i class="fas fa-angle-double-down"></i>
+      </a>
+      </div>
+    </div>
     </nav>
     <header>
       <div>
@@ -52,7 +59,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section id="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
           <h2 class="error"></h2>
