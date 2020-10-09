@@ -1,4 +1,4 @@
-# TinyApp Project
+# Tweeter Project
 
 Tweeter is a twitter clone where you can post a tweet and seen it on screen. It is a demo to show off how Ajax works. 
 
