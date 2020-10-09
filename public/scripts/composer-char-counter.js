@@ -10,7 +10,7 @@ $(document).ready(function() {
       displayedCounter.addClass("counterRed");
     } else {
       displayedCounter.removeClass("counterRed");
-    };
+    }
 
   });
 });
