@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1023px) {
  
   nav {
   background-color: #00e3e3;
@@ -16,8 +16,7 @@
 
 }
 
-
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
 
   .full-container {
     display: flex;
