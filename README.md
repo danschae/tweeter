@@ -4,10 +4,8 @@ Tweeter is a twitter clone where you can post a tweet and seen it on screen. It 
 
 ## Final Product
 
-!["screenshot description"](https://github.com/danschae/tinyapp/blob/master/docs/urls_new_page.png)
-!["screenshot description"](https://github.com/danschae/tinyapp/blob/master/docs/urls_page.png)
-!["screenshot description"](https://github.com/danschae/tinyapp/blob/master/docs/edit_urls_page.png)
-
+!["screenshot description"](https://github.com/danschae/tweeter/blob/master/docss/desktop_display.png)
+!["screenshot description"](https://github.com/danschae/tweeter/blob/master/docss/mobile-Display.png)
 
 ## Dependencies
 
