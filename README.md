@@ -1,17 +1,28 @@
-# Tweeter Project
+# TinyApp Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a twitter clone where you can post a tweet and seen it on screen. It is a demo to show off how Ajax works. 
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+## Final Product
 
-## Getting Started
+!["screenshot description"](https://github.com/danschae/tinyapp/blob/master/docs/urls_new_page.png)
+!["screenshot description"](https://github.com/danschae/tinyapp/blob/master/docs/urls_page.png)
+!["screenshot description"](https://github.com/danschae/tinyapp/blob/master/docs/edit_urls_page.png)
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
+- Node.js
 - Express
-- Node 5.10.x or above
+- Chance
+
+## Getting Started
+
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `node express_server.js` command.
+
+## How to Use
+- No logging in required;
+- App is simple to use, just input a tweet and it will appear on screen;
+- App layout will change based on screen size, 1024px is desktop, under that is mobile mode.
+
+
